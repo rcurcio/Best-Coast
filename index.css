@@ -18,7 +18,7 @@ a {text-decoration: none;}
 body {background-color: gray; font-family: "Verdana"}
 .imgDesc {visibility: visible; opacity: 1; color: #fff; outline-color: #000; position: relative; margin-top: 30%; margin-left: 9%;}
 .imgDesc:hover img {visibility: visible; opacity: 1;}
-p {font-size: 3em; height: 300px; width: 400px; margin: 0; position: absolute; color: rgb(255, 255, 255); text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+.categoryLabel {font-size: 3em; height: 300px; width: 400px; margin: 0; position: absolute; color: rgb(255, 255, 255); text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; vertical-align: middle; text-align: center;}
 .left {height: 300px; width: 400px; margin-right: 5%; float: right; margin-top: 10%; position: relative; top: 0;}
 .divPic {border: solid 4px; background-size: 100% 100%; background-repeat: no-repeat; height: 300px; width: 400px;}
 #topLeft {background-image: url(images/beach_category.jpg); border: solid 4px; background-size: 100% 100%; background-repeat: no-repeat; height: 300px; width: 400px;}
