@@ -1,0 +1,25 @@
+body {
+    padding-top: 50px;
+}
+.thumb {
+    margin-bottom: 30px;
+}
+.link-home,
+.link-home{
+box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.link-home:hover,
+.link-home:active,
+.link-home.hover{
+box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+}
+.img-city, .img-beach{
+float: right;	
+}
+.img-forest, .img-desert{
+float: left;	
+}
+
+footer {
+    margin: 50px 0;
+}

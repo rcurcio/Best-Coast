@@ -14,10 +14,10 @@ body {
 .categoryLabel:hover {opacity: 1; text-decoration: none; color: rgb(255, 255, 255)}
 .divPic:hover {-webkit-filter: saturate(2.5);}
 
-#topLeft {background-image: url(/../../beach_category.jpg);}
-#topRight {background-image: url(/images/forest_category.jpg);}
-#bottomLeft {background-image: url(images/city_category.jpg);}
-#bottomRight {background-image: url(images/desert_category.jpg);}
+#topLeft {background-image: url(../images/beach_category.jpg);}
+#topRight {background-image: url(../images/forest_category.jpg);}
+#bottomLeft {background-image: url(../images/city_category.jpg);}
+#bottomRight {background-image: url(../images/desert_category.jpg);}
 
 /* Event Elements */
 #events {float: left; height: 200px; width: 100%; text-align: center;}
