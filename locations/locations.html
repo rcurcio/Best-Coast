@@ -13,12 +13,12 @@
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome Icons -->
-	<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Custom CSS -->
     <link href="../css/locations.css" rel="stylesheet">
     <link href="../css/gallery.css" rel="stylesheet">
 
-	
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -27,7 +27,7 @@
   </head>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -53,25 +53,25 @@
                     <li>
                         <a href="../gallery/gallery.html"><i class="fa fa-image"></i> Gallery</a>
                     </li>
-                    <form class="navbar-form navbar-left" role="search">
+                    <li class="navbar-form navbar-left">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search...">
                         </div>
                         <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                    </form>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-	<!-- Description Section -->
+    <!-- Description Section -->
     <div id="events">
-      <h1 id="location_name"></h1>
-	  <br />
+      <h1 id="location_name">Location</h1>
+      <br />
       <p id="location_description"><br><br></p>
     </div>
-	
-	
+    
+    
     <div class="container">
     <!-- Location Categories -->
     <div id="categories">
@@ -113,11 +113,11 @@
     </div>
     <div id="comments" class="actionBox"> <!--add an id -->
         <ul class="commentList list"> <!-- add list class to the ul-->
-		
-	<!-- generate list in javascript-->
+        
+    <!-- generate list in javascript-->
  
         </ul>
-        <form class="form-inline" role="form">
+        <form class="form-inline">
             <div class="form-group">
                 <input class="form-control" type="text" placeholder="Your comments" />
             </div>
@@ -148,7 +148,7 @@
     <script src="../js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
-	<!-- contains functions to load different information for different locations -->
+    <!-- contains functions to load different information for different locations -->
     <script src="../js/locations.js"></script>
     
     <!-- including list.js the comment table -->
