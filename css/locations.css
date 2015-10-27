@@ -1,0 +1,97 @@
+body {
+  padding-top: 50px;
+}
+
+/* Location Category Elements */
+#categories {float: left; height: 650px; width: 100%;}
+.section {height: 50%; width: 50%; float: left;}
+
+.divPic.left {float: right; margin-right: 2%}
+.divPic.right {float: left; margin-left: 2%;}
+.divPic {border: solid 4px; background-size: 100% 100%; background-repeat: no-repeat; height: 300px; width: 400px; margin-top: 2%; padding: 0px;}
+.categoryLabel {font-size: 3em; height: 100%; width: 100%; margin: 0;  color: rgb(255, 255, 255); text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; vertical-align: middle; text-align: center; display: block; opacity: 0; letter-spacing: 4px;}
+
+.categoryLabel:hover {opacity: 1; text-decoration: none; color: rgb(255, 255, 255)}
+.divPic:hover {-webkit-filter: saturate(2.5);}
+
+#topLeft {background-image: url(../images/food_locations.jpg);}
+#topRight {background-image: url(../images/stay_locations.jpg);}
+#bottomLeft {background-image: url(../images/events_locations.jpg);}
+#bottomRight {background-image: url(../images/desert_category.jpg);}
+
+/* Event Elements */
+#events {float: left; height: 200px; width: 100%; text-align: center;}
+h5 {font-size: 3em; margin: 0;}
+
+
+/* Commentbox css */ 
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+
+.detailBox {
+    width:320px;
+    border:1px solid #bbb;
+    margin:auto;
+	margin-top: 680px;
+	
+}
+.titleBox {
+    background-color:#fdfdfd;
+    padding:10px;
+}
+.titleBox label{
+  color:#444;
+  margin:0;
+  display:inline-block;
+}
+
+.commentBox {
+    padding:10px;
+    border-top:1px dotted #bbb;
+}
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:80%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+    max-height:200px;
+    overflow:auto;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+}
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+.actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+}
