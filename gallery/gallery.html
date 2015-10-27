@@ -59,7 +59,7 @@
                     </li>
        <li class="navbar-form navbar-left">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search...">
+                            <input type="text" class="form-control" title="Search" placeholder="Search...">
                         </div>
                         <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                     </li>
@@ -80,67 +80,67 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                <a href="#" id="pop">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                <a href="#" id="pop1">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop2">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop3">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             
              <h1 class="page-header">Location 2</h1>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop4">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop5">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop6">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop7">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             
             <h1 class="page-header">Location 3</h1>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop8">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop9">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop10">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                 <a href="#">
-                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="">
+                 <a href="#" id="pop11">
+                    <img class="img-responsive img-rounded link-home" src="../images/img1.png" alt="img1">
                 </a>
             </div>
         </div>
@@ -159,13 +159,84 @@
         
     </div>
     <!-- /.container -->
+    
+    <!-- Modal Images -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h2 class="modal-title" id="myModalLabel">Image preview</h2>
+      </div>
+      <div class="modal-body text-center">
+        <img src="../images/img1.png" id="imagepreview" alt="img1">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
-
-</body>
+    <!-- open modal with image preview -->
+      <script>
+	$("#pop").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop1").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop2").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop3").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop4").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop5").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop6").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop7").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop8").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop9").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop10").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("#pop11").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+	</script>
+    
 
 </html>
+
+       
