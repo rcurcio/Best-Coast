@@ -2,6 +2,8 @@ body {
   padding-top: 50px;
 }
 
+.navbar-form.navbar-left {float: right;}
+
 /* Location Category Elements */
 #categories {float: left; height: 650px; width: 100%;}
 .section {height: 50%; width: 50%; float: left;}
@@ -11,7 +13,7 @@ body {
 .divPic {border: solid 4px; background-size: 100% 100%; background-repeat: no-repeat; height: 300px; width: 400px; margin-top: 2%; padding: 0px;}
 .categoryLabel {font-size: 3em; height: 100%; width: 100%; margin: 0;  color: rgb(255, 255, 255); text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; vertical-align: middle; text-align: center; display: block; opacity: 0; letter-spacing: 4px;}
 
-.categoryLabel:hover {opacity: 1; text-decoration: none; color: rgb(255, 255, 255)}
+.categoryLabel:hover {opacity: 1; text-decoration: none; color: rgb(255, 255, 255);}
 .divPic:hover {-webkit-filter: saturate(2.5);}
 
 #topLeft {background-image: url(../images/beach_category.jpg);}
