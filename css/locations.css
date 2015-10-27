@@ -20,7 +20,7 @@ body {
 #bottomRight {background-image: url(../images/desert_category.jpg);}
 
 /* Event Elements */
-#events {float: left; height: 200px; width: 100%; text-align: center;}
+#events {float: left; height: 115px; width: 100%; text-align: center;}
 h5 {font-size: 3em; margin: 0;}
 
 
@@ -31,7 +31,7 @@ h5 {font-size: 3em; margin: 0;}
     width:100%; /*width 100 to scale properly*/
     border:1px solid #bbb;
     margin:auto;
-	margin-top: 800px;
+	margin-top: 785px;
 	
 }
 .titleBox {

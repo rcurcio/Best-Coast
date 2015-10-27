@@ -24,7 +24,7 @@ $(function() {
 // this sets up a "template" for the list items
 var options = {
 	valueNames: [ 'imgUrl', 'text' ],
-	item: '<ul class="commentList list"><li><div class="commenterImage"><img class="imgUrl"/></div><div class="commentText"> <p class="text"></p> </div></li></ul>'
+	item: '<li><div class="commenterImage"><img class="imgUrl"/></div><div class="commentText"> <p class="text"></p> </div></li>s'
 };
                 
 //this json is used to generate the comments. each object is a comment -
