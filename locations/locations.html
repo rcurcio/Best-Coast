@@ -111,35 +111,11 @@
         
         <p class="taskDescription">Hey! Leave us a comment =]</p>
     </div>
-    <div class="actionBox">
-        <ul class="commentList">
-            <li>
-                <div class="commenterImage">
-                  <img src="http://lorempixel.com/50/50/people/6" />
-                </div>
-                <div class="commentText">
-                    <p class="">Oh my gosh! This location is amazing!</p> <span class="date sub-text">on October 11th, 2015</span>
-
-                </div>
-            </li>
-            <li>
-                <div class="commenterImage">
-                  <img src="http://lorempixel.com/50/50/people/7" />
-                </div>
-                <div class="commentText">
-                    <p class="">The food was pretty mediocre...</p> <span class="date sub-text">on October 15th, 2015</span>
-
-                </div>
-            </li>
-            <li>
-                <div class="commenterImage">
-                  <img src="http://lorempixel.com/50/50/people/9" />
-                </div>
-                <div class="commentText">
-                    <p class="">I really like these recommendations.</p> <span class="date sub-text">on October 20th, 2015</span>
-
-                </div>
-            </li>
+    <div id="comments" class="actionBox"> <!--add an id -->
+        <ul class="commentList list"> <!-- add list class to the ul-->
+		
+	<!-- generate list in javascript-->
+ 
         </ul>
         <form class="form-inline" role="form">
             <div class="form-group">
@@ -174,7 +150,14 @@
     <script src="../js/bootstrap.min.js"></script>
 	<!-- contains functions to load different information for different locations -->
     <script src="../js/locations.js"></script>
+    
+    <!-- including list.js the comment table -->
+     <script src="../js/list.js"></script>
+    
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+
+    
   </body>
 </html>

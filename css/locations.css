@@ -28,10 +28,10 @@ h5 {font-size: 3em; margin: 0;}
 @import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
 
 .detailBox {
-    width:320px;
+    width:100%; /*width 100 to scale properly*/
     border:1px solid #bbb;
     margin:auto;
-	margin-top: 680px;
+	margin-top: 800px;
 	
 }
 .titleBox {
