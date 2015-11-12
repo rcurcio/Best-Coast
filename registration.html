@@ -5,22 +5,25 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="About Us Page">
+		<meta name="description" content="Registration Page">
 		<meta name="author" content="Group 6">
 
-		<title>About Us</title>
+		<title>Best Coast</title>
 
 		<!-- Bootstrap Core CSS -->
-		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- Font Awesome Icons -->
-		<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 		<!-- Custom CSS -->
-		<link href="../css/locations.css" rel="stylesheet">
-		<link href="../css/gallery.css" rel="stylesheet">
+		<link href="css/locations.css" rel="stylesheet">
+		<link href="css/gallery.css" rel="stylesheet">
 
 		<style type="text/css">
-		.center {text-align: center;}
-		</style>
+	    .center {
+	    	text-align: center;
+	    }
+	    </style>
+
 	
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -30,8 +33,9 @@
 	</head>
 	
 	<body>
+
 		<!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -41,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">Best Coast</a>
+                <a class="navbar-brand" href="index.html">Best Coast</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,62 +53,69 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-map-marker"></i> Locations <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="../locations/locations.html">Location 1</a></li>
+                                <li><a href="locations/locations.html">Location 1</a></li>
                                 <li><a href="#">Location 2</a></li>
                                 <li><a href="#">Location 3</a></li>
                             </ul>
                     </li>
                     <li>
-                        <a href="../gallery/gallery.html"><i class="fa fa-image"></i> Gallery</a>
+                        <a href="gallery/gallery.html"><i class="fa fa-image"></i> Gallery</a>
                     </li>
                     <li class="navbar-form navbar-left">
                         <div class="form-group">
-                            <input title="Search" type="text" class="form-control" placeholder="Search...">
+                            <input type="text" class="form-control" placeholder="Search..." title="search">
                         </div>
                         <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                     </li>
 					<li>
-                        <a href="../login.html">Has an account? Login!</a>
+                        <a href="login.html">Has an account? Login!</a>
                     </li>
 					<li>
-                        <a href="../registration.html">New? Register here!</a>
+                        <a href="registration.html">New? Register here!</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 		
-		<h1 class="center">About Us</h1>
-		
-		<br>
-		<br>
-		
-		<p class="center">Ryan Curcio</p>
-		<p class="center">Bartosh Sudak</p>
-		<p class="center">Thais Mendonca</p>
-		<p class="center">Deepak Mallampalli</p>
-		<p class="center">Evan Jay N. Ho See</p>
-		<p class="center">Tamires Brito da Silva</p>
-
-		<br>
-
-		<p class="center">
-		Listed above is a group of students within California State University San Marcos, enrolled as of the semester of Fall 2015, who have formed together to create this website, which in turn shares the same name as the group, Best Coast.
-		</p>
-		
-		<br>
-		<footer>
-            <div class="row">
+	
+	<h1 class="center">Welcome!</h1>
+	<br /><br /><br />
+	<form onsubmit="myFunction()">
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td><input type="text" id="senha" size="100"></td>
+			</tr>
+			<tr>
+				<td>Username:</td>
+				<td><input type="text" id="senha" size="100"></td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td><input type="text" id="e-mail" size="100"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="text" id="senha" size="100"></td>
+			</tr>
+		</table><br>
+		<input type="submit" value="Submit">
+	</form>
+   
+	<footer>
+			<div class="row">
 				<div class="col-lg-12 text-center">
-                <p><a href="aboutus.html">About Us</a> | <a href="contactus.html">Contact Us</a></p>
-                <p>Copyright &copy; Best Coast 2015</p>
-                </div>
-            </div>
-        </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-		</body></html>
+				<p><a href="info/aboutus.html">About Us</a> | <a href="info/contactus.html">Contact Us</a></p>
+				<p>Copyright &copy; Best Coast 2015</p>
+				</div>
+			</div>
+		</footer>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body></html>
